@@ -17,11 +17,11 @@ for (const folder of functionFolders) {
   }
 }
 
-// Mengganti 'handleEvents' dan 'handleCommands' dengan nama fungsi yang sesuai
 const handlerEvents = require("./functions/handlers/handlerEvents");
 const handlerCommands = require("./functions/handlers/handlerCommands");
 
 handlerEvents(client);
 handlerCommands(client);
 
+client.handleCommands();
 client.login(token);
